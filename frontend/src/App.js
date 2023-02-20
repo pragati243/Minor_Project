@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 import './App.css';
-import MainNavigation from './shared/MainNavigation';
+import MainNavigation from './shared/components/Navigation/MainNavigation.js'
 
 const App = () => {
   return(
