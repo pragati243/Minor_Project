@@ -1,7 +1,0 @@
-a = 10
-def num(a):
-    a+=1
-
-num(a)
-print(num(a))
-print(a)
