@@ -103,28 +103,144 @@ export const menuItems = [{
     }]
 },{
     title: "RESEARCH",
-    submenu:[{
-        title:""
+    submenu:[
+    {
+        title:"COE",
+        submenu:[{
+            title:"Next Generation Network"
+        }]},
+    {
+        title:"Publications 2022",
+        submenu:[{
+            title:"2021"
+        },{
+            title:"2020",
+        },{
+            title:"2019",
+        },{
+            title:"2018",
+        },{
+            title:"2017",
+        },{
+            title:"2016",
+        },{
+            title:"2015",
+        },]
+    },{
+        title:"Funded Initiatives",
+    },{
+        title:"Patents",
+    },{
+        title:"Research Scholars",
+        submenu:[{
+            title:"PHD Awarded"
+        }]
+    },{
+        title:"Center for Applied Mathematics",
+    },{
+        title:"Labs",
+    },{
+        title:"External DSRC Members",
+    },{
+        title:"Collaborations",
+    },{
+        title:"Workshops",
+    },{
+        title:"Conferences",
     }]
 },{
     title: "STUDENTS",
     submenu:[{
-        title:""
+        title:"Student Activity Center(SAC)"
+    },{
+        title:"IEEE Student Branch"
+    },{
+        title:"E-Cell"
+    },{
+        title:"Facilities"
+    },{
+        title:"IT Facility"
+    },{
+        title:"Library"
+    },{
+        title:"Student Activities"
+    },{
+        title:"Student Achievement"
+    },{
+        title:"Anti Ragging Committee"
+    },{
+        title:"Outreach"
+    },{
+        title:"Students Speak"
+    },{
+        title:"AICTE Feedback"
+    },{
+        title:"NSS"
     }]
 },{
     title: "PLACEMENT",
     submenu:[{
-        title:""
+        title:"Placement Highlights"
+    },{
+        title:"Placement Statistics"
+    },{
+        title:"Roles Offered"
+    },{
+        title:"Companies Visited"
+    },{
+        title:"Remuneration Offered"
+    },{
+        title:"Report 2022"
+    },{
+        title:"IACA"
+    },{
+        title:"T&P Cell"
+    },{
+        title:"MOU"
+    },{
+        title:"Placement News"
     }]
 },{
     title: "QUICK LINKS",
     submenu:[{
-        title:""
+        title:"Institute ERP"
+    },{
+        title:"Careers"
+    },{
+        title:"Tenders"
+    },{
+        title:"Gallery"
+    },{
+        title:"Guest House"
+    },{
+        title:"Committees"
+    },{
+        title:"Media"
+    },{
+        title:"IMS"
+    },{
+        title:"Digital Initiative by NMEICT"
+    },{
+        title:"Grievance / Feedback"
+    },{
+        title:"ARIIA Ranking"
+    },{
+        title:"Mandatory Disclosure"
     }]
 },{
     title: "ADMISSIONS",
     submenu:[{
-        title:""
-    }]
-}       
+        title:"Why join IIIT-NR"
+    },{
+        title:"B. Tech"
+    },{
+        title:"M. Tech"
+    },{
+        title:"Ph.D."
+    },{
+        title:"FAQs"
+    },]
+},{
+    title: "PICK YOUR INTEREST",
+}            
 ];
