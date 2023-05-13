@@ -98,7 +98,7 @@ const Table = () => {
                   {emptyCellIndexes[colIndex].rowIndex === rowIndex ? (
                     <>
                       <input type="number" value={cellValue} onChange={(e) => handleEmptyCellChange(rowIndex, colIndex, e.target.value)} style={{ border: "1px solid black", width: "70%", padding: "0.5rem", borderRadius: "5px" }}/>
-                      <button onClick={() => checkAnswer(colIndex)}>Check</button>
+                      <button className ='ds'onClick={() => checkAnswer(colIndex)}>Check</button>
                     </>
                   ) : (
                     cellValue
