@@ -1,0 +1,71 @@
+.image-comparator {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .image-comparator h2 {
+    margin-bottom: 20px;
+  }
+  
+  .image-comparator p {
+    margin-bottom: 30px;
+  }
+  
+  .image-comparator form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-comparator label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .image-comparator label span {
+    margin-left: 10px;
+  }
+  
+  .image-comparator input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #ddd;
+  }
+
+  .buttono {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttono:hover {
+    background-color: #0077A2;
+  }
+  .filename {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }

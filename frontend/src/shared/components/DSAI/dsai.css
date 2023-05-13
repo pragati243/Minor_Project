@@ -37,7 +37,7 @@ table {
   }
   
   
-  button {
+  .ds {
     margin-left: 10px;
     padding: 8px 16px;
     font-size: 18px;
@@ -47,7 +47,7 @@ table {
     cursor: pointer;
   }
   
-  button:hover {
+  .ds:hover {
     background-color: #007FFF;
   }
   
