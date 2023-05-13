@@ -242,5 +242,16 @@ export const menuItems = [{
     },]
 },{
     title: "PICK YOUR INTEREST",
+    href: '/games',
+    submenu:[{
+        title:"CSE GAME",
+        href: "/cse-game"
+    },{
+        title:"DSAI GAME",
+        href: "/dsai-game"
+    },{
+        title:"ECE GAME",
+        href: "/ece-game",
+    },]
 }            
 ];

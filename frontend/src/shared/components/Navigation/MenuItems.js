@@ -52,7 +52,7 @@ const MenuItems = ({
             </button> <Dropdown depthLevel={depthLevel}
                 submenus={items.submenu}
                 dropdown={dropdown} /> </>
-        ) : (<a href="/#"> {items.title} </a>
+        ) : (<a href={items.href}> {items.title} </a>
         )}
     </li></>
     );
