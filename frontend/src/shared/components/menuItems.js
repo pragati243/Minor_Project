@@ -201,33 +201,6 @@ export const menuItems = [{
         title:"Placement News"
     }]
 },{
-    title: "QUICK LINKS",
-    submenu:[{
-        title:"Institute ERP"
-    },{
-        title:"Careers"
-    },{
-        title:"Tenders"
-    },{
-        title:"Gallery"
-    },{
-        title:"Guest House"
-    },{
-        title:"Committees"
-    },{
-        title:"Media"
-    },{
-        title:"IMS"
-    },{
-        title:"Digital Initiative by NMEICT"
-    },{
-        title:"Grievance / Feedback"
-    },{
-        title:"ARIIA Ranking"
-    },{
-        title:"Mandatory Disclosure"
-    }]
-},{
     title: "ADMISSIONS",
     submenu:[{
         title:"Why join IIIT-NR"

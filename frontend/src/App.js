@@ -12,6 +12,7 @@ import ScrollToTop from './shared/components/Navigation/ScrollToTop';
 import DummyContent from './shared/components/DummyContent/dummy';
 import WeighingMachine from './shared/components/CSE/cse';
 import Table from './shared/components/DSAI/dsai';
+import Chat from './shared/components/Chatbot/Chat';
 
 const App = () => {
   let routes;
@@ -31,6 +32,7 @@ const App = () => {
           {routes}
       </main>
     <ScrollToTop/>
+    <Chat></Chat>
   </Router>)
 };
 

@@ -1,4 +1,4 @@
-.Image img{
+.Image-nav img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -26,12 +26,12 @@ header {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  height: 58px;
+  height: 55px;
   background-color: #43536a;
   
 }
 
-.logo {
+.logo-nav {
   text-decoration: none;
   font-size: 25px;
   color: inherit;
@@ -71,7 +71,7 @@ header {
 .menu-items a,
 .menu-items button {
   text-align: left;
-  padding: 0.7rem 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .menu-items a:hover,

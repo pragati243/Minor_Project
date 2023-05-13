@@ -15,17 +15,17 @@ const MainNavigation = props => {
             height: '26px',
             width: '100%',
         }}>
-            <h1>This is a dummy website. To go to the real website click this link. <u><a href="iiitnr.ac.in">IIITNR website</a></u> </h1>
+            <h1>This is a dummy website. To go to the real website click this link. <u><a href="https://iiitnr.ac.in">IIITNR website</a></u> </h1>
         </div>
-        <div  className="Image">
+        <div  className="Image-nav">
             <img src={img1} alt=""></img>
         </div>
         <div className="nav-area">
-        <a href = "/#" className = "logo" >
+        <a href = "/#" className = "logo-nav" >
         IIITNR </a>
         <NavLinks />
         </div>
-        <div  className="Image">
+        <div  className="Image-nav">
             <img src={img2} alt=""></img>
         </div>
     </header>
