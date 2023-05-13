@@ -10,6 +10,13 @@ const MainNavigation = props => {
     return(
     <React.Fragment>
     <header>
+        <div style={{
+            backgroundColor: 'grey',
+            height: '26px',
+            width: '100%',
+        }}>
+            <h1>This is a dummy website. To go to the real website click this link. <u><a href="iiitnr.ac.in">IIITNR website</a></u> </h1>
+        </div>
         <div  className="Image">
             <img src={img1} alt=""></img>
         </div>
