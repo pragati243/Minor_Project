@@ -16,10 +16,10 @@ html, body ,#app, #app>div{
     bottom: 2%;
     right: 1%; 
     padding:0.5%;
-    border-top-left-radius: 1%;
+    /* border-top-left-radius: 1%;
     border-top-right-radius: 1%;
     box-shadow:  5px -5px 5px #336be6,-5px -5px 5px #7c55e7;
-    background-color:rgb(76, 108, 177);
+    background-color:rgb(76, 108, 177); */
     color:white;
     font-size:40%
   }

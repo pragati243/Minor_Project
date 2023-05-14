@@ -118,7 +118,7 @@ const Table = () => {
             <ul>
               <li>Mean: {solution.mean}</li>
               <li>Your Answer: {solution.value}</li>
-              <li>Correct: {solution.resultText}</li>
+              {/* <li>Correct: {solution.resultText}</li> */}
             </ul>
           </li>
         ))}

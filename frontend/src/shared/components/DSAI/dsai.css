@@ -1,10 +1,11 @@
 table {
-    border-collapse: collapse;
-    width: 80%;
-    margin: 50px auto;
-    font-size: 18px;
-    text-align: center;
-  }
+  border-collapse: collapse;
+  width: 80%;
+  margin: 50px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
   
   th, td {
     border: 2px solid black;
@@ -17,8 +18,8 @@ table {
   }
   
   td input {
-    width: 190px;
-    padding: 5px;
+    width: 150px;
+    padding: 3px;
     font-size: 18px;
     text-align: center;
   }

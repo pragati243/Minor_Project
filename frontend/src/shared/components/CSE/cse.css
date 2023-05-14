@@ -1,84 +1,66 @@
-/* .cse {
-    text-align: center;
-  }
-  
-  h1 {
-    margin-top: 0;
-    font-size: 2.5rem;
-  }
-  
-  .game {
-    margin: 2rem auto;
-    max-width: 700px;
-  }
-  
-  .ball-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-  }
-  
-  .ball {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 0 1rem;
-    border: 2px solid #333;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #333;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .ball:hover {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .light {
-    border-color: #a6d8ff;
-  }
-  
-  .light:hover {
-    background-color: #a6d8ff;
-    color: #333;
-  }
-  
-  .heavy {
-    border-color: #ffce8a;
-  }
-  
-  .heavy:hover {
-    background-color: #ffce8a;
-    color: #333;
-  }
-  
-  .message {
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button {
-    margin: 1rem;
-    padding: 0.5rem 1rem;
-    border: 2px solid #333;
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #333;
-    color: #fff;
-  }
-   */
+/* Style for the input field and button */
+input[type="number"] {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-right: 10px;
+}
+.number-guessing-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-guessing-game__button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #009688;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Style for the feedback message */
+.number-guessing-game__message {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Style for the heading */
+.number-guessing-game__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.solution-link {
+  text-align: center;
+}
+
+
+/* Style for the instructions */
+.number-guessing-game__instructions {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.number-guessing-game__input {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ccc; /* add border */
+  margin-right: 10px;
+}
+
+
+/* Style for the input group */
+.number-guessing-game__input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

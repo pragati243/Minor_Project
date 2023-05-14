@@ -1,71 +1,58 @@
-import { useState } from "react";
-import "./cse.css";
+import React, { useState } from 'react';
+import './cse.css';
 
-function WeighingMachine() {
-  const [balls, setBalls] = useState(["?", "?", "?", "?", "?", "?", "?", "?"]);
-  const [message, setMessage] = useState("Place 3 balls on each side of the weighing machine and click weigh");
+function NumberGuessingGame() {
+  const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 100) + 1);
+  const [guess, setGuess] = useState('');
+  const [hint, setHint] = useState('');
+  const [message, setMessage] = useState('');
+  const [message_solution, setSolution] = useState('');
+  const [attempts, setAttempts] = useState(0);
 
-  function handleWeigh() {
-    const leftBalls = balls.slice(0, 3);
-    const rightBalls = balls.slice(3, 6);
-    const remainingBalls = balls.slice(6);
-
-    const result = weigh(leftBalls, rightBalls);
-
-    if (result === 0) {
-      setMessage("The odd ball is one of the remaining balls. Weigh any 2 of them.");
-    } else if (result < 0) {
-      setMessage("The odd ball is lighter. Weigh any 2 balls from the left side.");
-      setBalls([leftBalls[0], leftBalls[1], remainingBalls[0], remainingBalls[1], "?", "?", "?", "?"]);
+  const handleGuess = () => {
+    if (guess === '') {
+      setMessage('Please enter a number');
+    } else if (guess > randomNumber) {
+      setMessage('Too high, try again');
+      setAttempts(attempts + 1);
+    } else if (guess < randomNumber) {
+      setMessage('Too low, try again');
+      setAttempts(attempts + 1);
     } else {
-      setMessage("The odd ball is heavier. Weigh any 2 balls from the left side.");
-      setBalls([leftBalls[0], leftBalls[1], remainingBalls[2], remainingBalls[3], "?", "?", "?", "?"]);
+      setMessage(`Congratulations! You guessed the number in ${attempts + 1} attempts.`);
     }
-  }
+  };
 
-  function weigh(leftBalls, rightBalls) {
-    const leftWeight = leftBalls.reduce((sum, ball) => sum + getWeight(ball), 0);
-    const rightWeight = rightBalls.reduce((sum, ball) => sum + getWeight(ball), 0);
-    return leftWeight - rightWeight;
-  }
-
-  function getWeight(ball) {
-    switch (ball) {
-      case "light":
-        return -1;
-      case "heavy":
-        return 1;
-      default:
-        return 0;
-    }
-  }
+  const handleHint = () => {
+    setHint(`Try starting from 50. Then short your solution space and then again try middle elements.`);
+  };
+  
+  const handleSolution = () => {
+    setSolution(
+      <div className="number-guessing-game__solution">
+        <p>The number was {randomNumber}. Binary search can be used to solve this problem in a maximum of log(100) = 7 attempts.</p>
+        <p className="solution-link">Here is the link to the solution: <u><a href="https://www.geeksforgeeks.org/number-guessing-game/" target="_blank" rel="noopener noreferrer">Solution</a></u></p>
+      </div>
+    );
+  };
+  
+  
 
   return (
-    <div className="weighing-machine">
-      <div className="message">{message}</div>
-      <div className="balls">
-        {balls.map((ball, index) => (
-          <button key={index} className={`ball ball-${ball}`} onClick={() => setBalls(updateBalls(balls, index))}>
-            {ball}
-          </button>
-        ))}
-      </div>
-      <button className="weigh-button" onClick={handleWeigh}>Weigh</button>
+    
+    <div className="number-guessing-game">
+      <br></br>
+      <h1 className="number-guessing-game__title">Number Guessing Game</h1>
+      <p className="number-guessing-game__instructions">Guess a number between 1 and 100:</p>
+      <input className="number-guessing-game__input" type="number" value={guess} onChange={(e) => setGuess(e.target.value)} /><br></br>
+      <button className="number-guessing-game__button" onClick={handleGuess}>Guess</button> 
+      <p className="number-guessing-game__message">{message}</p><br></br>
+      <button className="number-guessing-game__button" onClick={handleHint}>Hint</button>
+      <p className="number-guessing-game__message">{hint}</p><br></br>
+      <button className="number-guessing-game__button" onClick={handleSolution}>Solution</button>
+      <p className="number-guessing-game__message">{message_solution}</p>
     </div>
   );
 }
 
-function updateBalls(balls, index) {
-  const newBalls = [...balls];
-  if (newBalls[index] === "?") {
-    newBalls[index] = "light";
-  } else if (newBalls[index] === "light") {
-    newBalls[index] = "heavy";
-  } else {
-    newBalls[index] = "?";
-  }
-  return newBalls;
-}
-
-export default WeighingMachine;
-
+export default NumberGuessingGame;

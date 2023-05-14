@@ -83,11 +83,11 @@ const ScrollToTop = () => {
   return (
     <div className="fixed bottom-2 left-2">
       <button
-        type='button'
+      type='button'
         onClick={scrollTo}
         className={classNames(
           isVisible ? 'opacity-100' : 'opacity-0',
-          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-pink-600 transition-opacity hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500'
+          'inline-flex items-center p-3 rounded-full shadow-sm text-white bg-pink-600 transition-opacity hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 m-2'
         )}
       >
         <BiArrowFromBottom className='h-6 w-6' aria-hidden='true' />
